@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transplant Data Input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Transplant Data Input</h1>
+
+    <form id="transplantForm">
+        <label for="age">Age (0-100):</label>
+        <input type="number" id="age" name="age" min="0" max="100" required><span class="error" id="ageError"></span><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="bp">BP (50-200):</label>
+        <input type="number" id="bp" name="bp" min="50" max="200" required><span class="error" id="bpError"></span><br><br>
+
+        <label for="heart_attack">Heart Attack:</label>
+        <select id="heart_attack" name="heart_attack">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="heart_valve">Heart Valve:</label>
+        <select id="heart_valve" name="heart_valve">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="heart_defect_at_birth">Heart Defect at Birth:</label>
+        <select id="heart_defect_at_birth" name="heart_defect_at_birth">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="cardiomyopathy">Cardiomyopathy:</label>
+        <select id="cardiomyopathy" name="cardiomyopathy">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="severe_cystic_fibrosis">Severe Cystic Fibrosis:</label>
+        <select id="severe_cystic_fibrosis" name="severe_cystic_fibrosis">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="copd">COPD (Lung Disease):</label>
+        <select id="copd" name="copd">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="repeated_urinary_infections">Repeated Urinary Infections:</label>
+        <select id="repeated_urinary_infections" name="repeated_urinary_infections">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="diabities">Diabetes:</label>
+        <select id="diabities" name="diabities">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="kidney_stones">Kidney Stones:</label>
+        <select id="kidney_stones" name="kidney_stones">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="urinary_tract_infection">Urinary Tract Infection:</label>
+        <select id="urinary_tract_infection" name="urinary_tract_infection">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="transplant">Transplant:</label>
+        <select id="transplant" name="transplant">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="blood_type_match">Blood Type Match (Yes/No):</label>
+        <select id="blood_type_match" name="blood_type_match">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="hla_match_score">HLA Match Score (0-100):</label>
+        <input type="number" id="hla_match_score" name="hla_match_score" min="0" max="100"><span class="error" id="hlaError"></span><br><br>
+
+        <label for="crossmatch_result">Crossmatch Result (Yes/No):</label>
+        <select id="crossmatch_result" name="crossmatch_result">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="pra_score">PRA Score (0-100):</label>
+        <input type="number" id="pra_score" name="pra_score" min="0" max="100"><span class="error" id="praError"></span><br><br>
+
+        <label for="age_diff">Age Difference (0-100):</label>
+        <input type="number" id="age_diff" name="age_diff" min="0" max="100"><span class="error" id="ageDiffError"></span><br><br>
+
+        <label for="size_compatibility">Size Compatibility (Yes/No):</label>
+        <select id="size_compatibility" name="size_compatibility">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="urgency_score">Urgency Score (1-10):</label>
+        <input type="number" id="urgency_score" name="urgency_score" min="1" max="10"><span class="error" id="urgencyError"></span><br><br>
+
+        <label for="compatible">Compatible:</label>
+        <select id="compatible" name="compatible">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

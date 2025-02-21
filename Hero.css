@@ -1,0 +1,234 @@
+.hero {
+  background-image: url("your-hero-image.jpg"); 
+  background-size: cover;
+  background-position: center;
+  color: rgba(253, 247, 247, 0.833);
+  background-color: #a8a3a3f3;
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  text-align: center;
+  margin-bottom: 4rem;
+  background-color: rgba(105, 93, 93, 0.724); 
+  padding: 2rem;
+  width: 50%; 
+  border-radius: 8px; 
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-buttons button {
+  background-color: #a43f58;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-buttons button:hover {
+  background-color: #be0c1e;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.stat-container { 
+  background-color: rgba(95, 90, 90, 0.269); 
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+}
+
+.stat-icon {
+  width: 50px; 
+  height: 50px;
+  margin-bottom: 0.5rem;
+  color: #a43f58; 
+}
+
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #a43f58;
+}
+
+.stat p {
+  font-size: 1rem;
+}
+
+.organ-container {
+  overflow-y: auto; 
+  scroll-snap-type: y mandatory; 
+  -webkit-overflow-scrolling: touch; 
+  height: 200px; 
+  margin: 2rem auto;
+  border: 1px solid #a43f58;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.organ-item {
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+  min-height: 200px;
+  flex-shrink: 0;
+  width: 100%;
+  border-radius: 8px; 
+  box-sizing: border-box;
+  margin-bottom: 0;
+  margin-top: 1rem; 
+}
+
+.organ-container {
+    background-color: #5a4e4ea5;
+    border: 1px solid #a43f58; 
+}
+
+.organ-text { 
+  flex: 1;
+  text-align: left; 
+  padding-right: 2rem; 
+  color: #fffdfd;
+}
+
+.organ-image {
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.organ-description {
+  max-width: 90%; 
+  text-align: center; 
+}
+
+.organ-description h3 {
+  color: #a43f58;
+  margin-bottom: 0.5rem;
+}
+
+.organ-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.blood-donation-facts {
+  text-align: center;
+  margin-top: 4rem; 
+}
+
+.blood-donation-facts h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 2rem; 
+}
+
+
+
+.fact-card p {
+  font-size: 1rem;
+}
+body {
+  margin: 0 !important;
+}
+
+.blood-donation-facts {
+  text-align: center;
+  margin-top: 4rem; /* Adjust as needed */
+}
+
+.blood-donation-facts h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fact-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  justify-content: center; /* Center the cards */
+  gap: 1rem; /* Adjust spacing as needed */
+}
+
+.fact-card {
+  border: 1px solid #a43f58;
+  background-color: rgba(89, 84, 84, 0.537); /* Or any color you prefer */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Adjust width as needed */
+  text-align: center;
+}
+
+.fact-card p {
+  font-size: 1rem;
+}
+
+.hero-buttons button:hover {
+  background-color: #be0c1e;
+}
+
+.fact-card:hover {
+  background-color: #a43f589d;
+}
+
+/* Hero.css */
+.no-underline {
+  text-decoration: none;
+}

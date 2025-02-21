@@ -1,0 +1,84 @@
+.donor-form {
+    width: 80%; 
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.donor-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.donor-form .form-group {
+    margin-bottom: 15px;
+}
+
+.donor-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.donor-form input[type="text"],
+.donor-form input[type="file"],
+.donor-form textarea,
+.donor-form select {
+    width: calc(100% - 12px); 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.donor-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.donor-form .organ-preferences {
+    display: grid; /
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 10px;
+}
+
+.donor-form .organ-preference {
+    margin-bottom: 10px;
+}
+
+
+.donor-form .signature-canvas {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    cursor: crosshair; 
+}
+
+.donor-form button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.donor-form button:hover {
+    background-color: #45a049;
+}
+
+.donor-form .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .donor-form .organ-preferences {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    }
+}
